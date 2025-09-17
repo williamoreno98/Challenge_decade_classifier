@@ -1,0 +1,6 @@
+# Ignorar todos los archivos CSV
+*.csv
+*.joblib
+
+# Asegurarse de no ignorar el .gitignore en sí
+!.gitignore
