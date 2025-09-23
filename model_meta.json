@@ -2,15 +2,15 @@
   "model_file": "baseline_tfidf_logreg_full.joblib",
   "seed": 42,
   "transformer_weights": {
-    "word": 0.8,
-    "char": 1.2
+    "word": 0.7,
+    "char": 1.3
   },
   "word_tfidf": {
     "ngram_range": [
       1,
       2
     ],
-    "min_df": 2,
+    "min_df": 1,
     "max_df": 0.9,
     "sublinear_tf": true,
     "strip_accents": null
@@ -20,13 +20,13 @@
       3,
       5
     ],
-    "min_df": 2,
+    "min_df": 3,
     "max_df": 0.9,
     "sublinear_tf": true
   },
   "clf": {
     "type": "LinearSVC",
-    "C": 0.1,
+    "C": 0.12,
     "class_weight": "balanced",
     "max_iter": 5000,
     "random_state": 42
@@ -37,9 +37,16 @@
     "random_state": 42
   },
   "cv_results": {
-    "accuracy_mean": 0.2761202017610486,
-    "accuracy_std": 0.004088070841680926,
-    "f1_macro_mean": 0.26136710561760534,
-    "f1_macro_std": 0.004136725479503553
+    "accuracy_mean": 0.27882696475164714,
+    "accuracy_std": 0.0038212364681529947,
+    "f1_macro_mean": 0.2644770427021742,
+    "f1_macro_std": 0.0036273474123788094
+  },
+  "versions": {
+    "scikit-learn": "1.6.1",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "joblib": "1.4.2"
   }
 }
