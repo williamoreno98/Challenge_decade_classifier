@@ -1,0 +1,45 @@
+{
+  "model_file": "baseline_tfidf_logreg_full.joblib",
+  "seed": 42,
+  "transformer_weights": {
+    "word": 0.8,
+    "char": 1.2
+  },
+  "word_tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.9,
+    "sublinear_tf": true,
+    "strip_accents": null
+  },
+  "char_tfidf": {
+    "ngram_range": [
+      3,
+      5
+    ],
+    "min_df": 2,
+    "max_df": 0.9,
+    "sublinear_tf": true
+  },
+  "clf": {
+    "type": "LinearSVC",
+    "C": 0.1,
+    "class_weight": "balanced",
+    "max_iter": 5000,
+    "random_state": 42
+  },
+  "cv": {
+    "folds": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "cv_results": {
+    "accuracy_mean": 0.2761202017610486,
+    "accuracy_std": 0.004088070841680926,
+    "f1_macro_mean": 0.26136710561760534,
+    "f1_macro_std": 0.004136725479503553
+  }
+}
