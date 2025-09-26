@@ -1,5 +1,5 @@
 {
-  "model_file": "tfidf_svc_word13md2_char25md4_C017_hash_w06_c14.joblib",
+  "model_file": "tfidf_svc_word13md2_char25md4_C019_hash_w06_c14.joblib",
   "seed": 42,
   "transformer_weights": {
     "word": 0.6,
@@ -74,9 +74,9 @@
   },
   "clf": {
     "type": "LinearSVC",
-    "C": 0.17,
+    "C": 0.19,
     "class_weight": "balanced",
-    "max_iter": 5000,
+    "max_iter": 6000,
     "random_state": 42,
     "loss": "squared_hinge",
     "multi_class": "ovr",
@@ -88,9 +88,9 @@
     "random_state": 42
   },
   "cv_results": {
-    "accuracy_mean": 0.2876478095398416,
-    "accuracy_std": 0.0030775470102188244,
-    "f1_macro_mean": 0.27648348504269876,
-    "f1_macro_std": 0.003569440874633571
+    "accuracy_mean": 0.288093608567746,
+    "accuracy_std": 0.002350897675810105,
+    "f1_macro_mean": 0.2775269235250297,
+    "f1_macro_std": 0.0028120324341855997
   }
 }
