@@ -1,5 +1,5 @@
 {
-  "model_file": "tfidf_svc_word13_md2_unicode_char35_md3_C016_hash_w06_c14.joblib",
+  "model_file": "tfidf_svc_word13md2_char25md4_C017_hash_w06_c14.joblib",
   "seed": 42,
   "transformer_weights": {
     "word": 0.6,
@@ -21,15 +21,15 @@
   "char_tfidf": {
     "analyzer": "char",
     "ngram_range": [
-      3,
+      2,
       5
     ],
-    "min_df": 3,
+    "min_df": 4,
     "max_df": 0.9,
     "sublinear_tf": true,
-    "vocab_size": 715432
+    "vocab_size": 554826
   },
-  "n_features_total": 1022880,
+  "n_features_total": 862274,
   "train_rows": 31403,
   "class_distribution": {
     "150": 786,
@@ -74,7 +74,7 @@
   },
   "clf": {
     "type": "LinearSVC",
-    "C": 0.16,
+    "C": 0.17,
     "class_weight": "balanced",
     "max_iter": 5000,
     "random_state": 42,
@@ -88,9 +88,9 @@
     "random_state": 42
   },
   "cv_results": {
-    "accuracy_mean": 0.28252089762168175,
-    "accuracy_std": 0.003311228425347757,
-    "f1_macro_mean": 0.2707072778469925,
-    "f1_macro_std": 0.003334897903078022
+    "accuracy_mean": 0.2876478095398416,
+    "accuracy_std": 0.0030775470102188244,
+    "f1_macro_mean": 0.27648348504269876,
+    "f1_macro_std": 0.003569440874633571
   }
 }
